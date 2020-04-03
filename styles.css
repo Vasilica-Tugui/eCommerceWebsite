@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*Navigation bar styling*/
+
 #header {
     position: fixed;
     background-color: #fcfcfc;
@@ -24,6 +26,7 @@
 
 .image {
   width: 7vw;
+  margin-right: 60px;
 }
 
 #nav-bar {
@@ -41,17 +44,147 @@
 .nav-link {
   text-decoration: none;
   color:#5a5070;
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding-right: 100px;
 }
 
 #nav-bar input[type=text] {
-    width: 20vw;
+    width: 40vw;
     font-size: 1.1em;
-    padding: 2px;
+    padding: 3px 10px 3px 10px;
     border-radius: 5px;
+    font-family: FontAwesome;
 }
 
 input {
     color: #5a5070;
+    border: 1px solid #5a5070;
+    opacity: 0.8;
 }
+
+
+input:hover{
+    border-color: none;
+}
+
+#nav-icons {
+    display: flex;
+    width: 30vw;
+    justify-content: flex-end;
+}
+
+.icons {
+    color: #5a5070;
+    padding: 0px 20px;
+    font-size: 1.6em;
+    border-left: 1px solid #5a5070;
+    border-right: 1px solid #5a5070;
+    
+}
+
+/* End of navigation bar styling*/
+
+/*Footer styling*/
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fcfcfc;
+    padding: 10px;
+  }
+  
+  #nav-footer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  
+  #nav-footer > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+  }
+  
+  #nav-footer ul li {
+    text-decoration: none;
+    color: #5a5070;
+  }
+
+  #footer >p {
+    color: #5a5070;
+    text-align: center;
+  }
+
+  /*End of footer styling*/
+
+@media screen and (max-width: 1350px) {
+    .nav-link {
+        padding-right: 70px;
+    }
+
+    #nav-bar input[type=text] {
+        width: 30vw;
+    }
+
+    .nav-link {
+        padding-right: 50px;
+        font-size: 1.4em;
+    }
+  }
+
+
+@media screen and (max-width: 1200px) {
+    .nav-link {
+        padding-right: 40px;
+    }
+
+    #nav-bar input[type=text] {
+        width: 30vw;
+    }
+
+    .nav-link {
+        padding-right: 50px;
+        font-size: 1.4em;
+    }
+  }
+
+  @media screen and (max-width: 930px) {
+
+    .nav-link {
+        padding-right: 30px;
+        font-size: 1.3em;
+    }
+
+    #nav-bar input[type=text] {
+        width: 25vw;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .nav-link {
+        padding-right: 35px;
+        font-size: 1.1em;
+    }
+
+    .icons {
+        font-size: 1.3em;
+    }
+
+    #nav-bar input[type=text] {
+        width: 30vw;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+
+    .image {
+        margin-right: 25px;
+    }
+
+    .nav-link {
+        padding-right: 20px;
+        font-size: 1.1em;
+    }
+  }
