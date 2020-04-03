@@ -7,15 +7,16 @@
 /*Navigation bar styling*/
 
 #header {
+    display: flex;
     position: fixed;
     background-color: #fcfcfc;
     top: 0;
     width: 100%;
     min-height: 70px;
     padding: 0px 20px;
-    display: flex;
     justify-content: start;
     align-items: center;
+    z-index: 103;
 }
 
 #header-img{
@@ -49,55 +50,106 @@
 }
 
 #nav-bar input[type=text] {
-    width: 40vw;
-    font-size: 1.1em;
-    padding: 3px 10px 3px 10px;
-    border-radius: 5px;
-    font-family: FontAwesome;
+  width: 40vw;
+  padding: 3px 10px 3px 10px;
+  border-radius: 5px;
 }
 
 input {
-    color: #5a5070;
-    border: 1px solid #5a5070;
-    opacity: 0.8;
-}
-
-
-input:hover{
-    border-color: none;
+  color: #5a5070;
+  border: 1px solid #5a5070;
+  opacity: 0.8;
 }
 
 #nav-icons {
-    display: flex;
-    width: 30vw;
-    justify-content: flex-end;
+  display: flex;
+  width: 30vw;
+  justify-content: flex-end;
 }
 
 .icons {
-    color: #5a5070;
-    padding: 0px 20px;
-    font-size: 1.6em;
-    border-left: 1px solid #5a5070;
-    border-right: 1px solid #5a5070;
-    
+  color: #5a5070;
+  padding: 0px 20px;
+  font-size: 1.6em;
+  border-left: 1px solid #5a5070;
+  border-right: 1px solid #5a5070;    
 }
 
 /* End of navigation bar styling*/
 
+/*Start of main content styling*/
+
+main {
+  margin-top: 120px;
+  margin-bottom: 150px;
+  position: relative;
+}
+
+#title, #subtitle{
+  text-align: center;
+  color: #341e54;
+}
+
+#subtitle{
+  margin-bottom: 50px;
+}
+
+#contactUs_container {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 40%;
+  background-color: #fcfcfc;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#contactUs_container > input {
+  display: block;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #5a5070; 
+}
+
+#contactUs_container > textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fcfcfc;
+  border: 1px solid;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #5a5070; 
+}
+
+#contactUs_button {
+  background-color: #5a5070;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/*End of main styling*/
+
+
 /*Footer styling*/
 
 #footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #fcfcfc;
     padding: 10px;
+    max-height: 80px;
   }
   
   #nav-footer {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
   
   #nav-footer > ul {
@@ -110,6 +162,10 @@ input:hover{
   #nav-footer ul li {
     text-decoration: none;
     color: #5a5070;
+  }
+
+  .footer-link {
+    font-size: 1.2em;
   }
 
   #footer >p {
@@ -159,6 +215,14 @@ input:hover{
 
     #nav-bar input[type=text] {
         width: 25vw;
+    }
+
+    #title {
+      font-size: 1.2em;
+    } 
+
+    #subtitle{
+      font-size: 1em;
     }
   }
 
