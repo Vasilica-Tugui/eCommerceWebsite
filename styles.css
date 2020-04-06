@@ -82,8 +82,9 @@ input {
 main {
   margin-top: 120px;
   margin-bottom: 150px;
-  position: relative;
 }
+
+/* ContactUs page Styling*/
 
 #title, #subtitle{
   text-align: center;
@@ -131,6 +132,65 @@ main {
   border-radius: 5px;
   font-size: 1.2em;
 }
+/*End of ContactUs page Styling*/
+
+/* LogIn/Register page Styling */
+
+#main_logInAndRegister {
+  display:flex;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 150px;
+  justify-content: space-evenly;
+}
+
+.containerlandr {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.containerlandr input {
+  padding:7px;
+  border-radius: 5px;
+  margin: 0px 10px 10px 10px; 
+}
+
+.containerlandr button {
+  margin: 10px;
+  padding:7px;
+  border-radius: 5px;
+}
+
+.logIn_div button {
+  margin-top: 95px;
+  color: #ffffff;
+  background-color: #5a5070;
+}
+
+.register_div button {
+  color: #5a5070;
+}
+
+.logIn_div {
+  background-color: #f0f0f0;
+  color: #5a5070;
+}
+
+.register_div {
+  background-color: #5a5070;
+  color: #ffffff;
+}
+
+div >h2, p {
+  padding-bottom: 40px;
+  margin: 0px 10px 10px 10px; 
+}
+
+
+/* End of LogIn/Register page Styling */
 
 /*End of main styling*/
 
